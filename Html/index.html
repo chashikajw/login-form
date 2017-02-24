@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+	form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+	.container {
+    padding: 30px;
+}
+
+    .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+	span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+	@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+
+	button {
+    background-color: #3d80c1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 100%;
+    }
+</style>
+<head>
+
+	<title>Login interface</title>
+</head>
+<body>
+<form method="post" action="../controllers/register.php">
+
+<div class="imgcontainer">
+    <img src="http://print.snc.edu/images/genericperson.png" alt="Avatar" class="avatar">
+  </div>
+
+<div class='container'>
+
+    <label><b>User name</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+
+	<label><b>Password</b></label>
+	<input type="password" placeholder="Enter password" name="psw" required>
+
+	<label><b>Confirm Password</b></label>
+	<input type="password" placeholder="Re enter Password" name="pswtest" required>
+
+	<button type="submit" name="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+</div>
+
+
+
+
+
+
+</body>
+</html>
